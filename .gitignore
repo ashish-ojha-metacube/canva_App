@@ -1,0 +1,6 @@
+# TeamsFx files
+# dependencies
+node_modules/
+
+# build
+lib/

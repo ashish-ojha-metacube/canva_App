@@ -1,0 +1,21 @@
+{
+  "_f3f31bb5-8faa-413a-9861-7c62e101ce03_a:10rk19gbhgJ3aPD1X_0soXDGqrYZGBt1zFEiwfAY_tfxKA8B9aWbQMlUqyY8XNxXx5tZB-PF5h3c2oM7At1gY-7vS9o-gM1r3X4Yg6MYR_wnXrORvU1KkBVtWlMmO9I6X": {
+    "activityId": "f:3e294b53-0236-e34b-5c44-2e9bf3f45ce3",
+    "user": {
+      "id": "29:1svjNXvqH6Ix-Lj6Os5Ktoc8Zry4fdZ17XoEWyWbxh85AmlAJyVRqgoKh0T7nqEcNV69_K5Frpd0M-cvqMu39Kg",
+      "aadObjectId": "d8dfeca5-6d29-4115-92c6-9c3b5f03c7e7"
+    },
+    "bot": {
+      "id": "28:96555c4f-ffe3-4dcb-a1db-4914f857e487",
+      "name": "Canva1"
+    },
+    "conversation": {
+      "conversationType": "personal",
+      "tenantId": "f3f31bb5-8faa-413a-9861-7c62e101ce03",
+      "id": "a:10rk19gbhgJ3aPD1X_0soXDGqrYZGBt1zFEiwfAY_tfxKA8B9aWbQMlUqyY8XNxXx5tZB-PF5h3c2oM7At1gY-7vS9o-gM1r3X4Yg6MYR_wnXrORvU1KkBVtWlMmO9I6X"
+    },
+    "channelId": "msteams",
+    "locale": "en-US",
+    "serviceUrl": "https://smba.trafficmanager.net/emea/"
+  }
+}
