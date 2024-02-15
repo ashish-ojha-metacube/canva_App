@@ -22,7 +22,7 @@ server.post(
     let continuationToken = undefined;
     const { title, appName, description, url, image } = req.body;
     const imageBuffer = Buffer.from(image, 'base64');
-    const imagePath = './adaptiveCards/image.jpg'; 
+    const imagePath = 'https://canva-563m.onrender.com/adaptiveCards/image.jpg'; 
     fs.writeFileSync(imagePath, imageBuffer);
     console.log('got notification');
     do {
