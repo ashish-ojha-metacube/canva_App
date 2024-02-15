@@ -3,6 +3,7 @@ const { notificationApp } = require("./internal/initialize");
 const { AdaptiveCards } = require("@microsoft/adaptivecards-tools");
 const { TeamsBot } = require("./teamsBot");
 const restify = require("restify");
+const fs = require('fs');
 
 // Create HTTP server.
 const server = restify.createServer();
@@ -19,7 +20,10 @@ server.post(
   async (req, res) => {
     const pageSize = 100;
     let continuationToken = undefined;
-    const { title, appName, description, url } = req.body;
+    const { title, appName, description, url, image } = req.body;
+    const imageBuffer = Buffer.from(image, 'base64');
+    const imagePath = './adaptiveCards/image.jpg'; 
+    fs.writeFileSync(imagePath, imageBuffer);
     console.log('got notification');
     do {
       const pagedData = await notificationApp.notification.getPagedInstallations(
@@ -36,7 +40,7 @@ server.post(
             title: title || "Default Title",
             appName: appName || "Default App Name",
             description: description || "Default Description",
-            notificationUrl: url || "https://www.canva.com/",
+            notificationUrl: url ||imagePath,
            })
         );
 
